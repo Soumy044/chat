@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chacha Chaudhary Chatbot</title>
+  <script src="/static/script.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+    #chatbox {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      height: 400px;
+      overflow-y: scroll;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .user, .bot {
+      margin: 10px 0;
+    }
+    .user {
+      text-align: right;
+      color: blue;
+    }
+    .bot {
+      text-align: left;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>💬 Talk to Chacha Chaudhary</h1>
+  <div id="chatbox"></div>
+  <input id="user-input" type="text" placeholder="Ask something..." style="width: 80%;" />
+  <button onclick="sendMessage()">Send</button>
+</body>
+</html>
